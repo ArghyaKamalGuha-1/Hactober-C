@@ -13,6 +13,8 @@ protected:
     char f_d[10],toja[7],tojd[7]; //protected members
     long int doj;
     int choice,src,dest;
+    char Nan;  //nationality
+
 public://public member functions
     void d_pnr()
     {
@@ -21,7 +23,7 @@ public://public member functions
     }
     int j_detail() // function declaration and definition for domestic journey
     {
-        cout << "\nEnter DateOfJourney(DDMMYY)." << "Please enter a valid date." <<  endl;
+        cout << "\nEnter DateOfJourney(DD-MM-YY)." << "Please enter a valid date." <<  endl;
         cin >> doj;
         cout << "\1.Brisbane(1) \t\2.Sydney(2) \t\3.Melbourne(3) \t\4.Canberra(4)" << endl << endl;
         cout << "\tEnter Source" << endl;
@@ -279,6 +281,8 @@ public://public member functions
         cin >> f_name;
         cout << "Last Name:";
         cin >> l_name;
+     cout<<"\nEnter Nationality";
+     gets(Nan);
     }
     int gender_check()//to check gender input as valid
     {
@@ -304,6 +308,7 @@ public://public member functions
         cout << "Age:" << age << endl;
         cout << "Email id:" << email << endl;
         cout << "Contact No.:" << c_no << endl;
+	cout<<"Nationaltiy:"<<Nan<<endl;
     }
 
 
